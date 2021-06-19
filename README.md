@@ -57,7 +57,7 @@ The `MechaCar_mpg.csv` dataset contains mpg test results for 50 prototype MechaC
 				
 
 **Statistical Summary:** 
-![d1](https://github.com/emmanuelmartinezs/MechaCar_Statistical_Analysis/blob/main/Resources/Images/linear_regression_d1.png)
+![image](https://user-images.githubusercontent.com/57301554/122632595-710a3480-d099-11eb-8a46-25360f800ac8.png)
 
 From the above output we can see that:
 
@@ -88,20 +88,18 @@ The MechaCar Suspension_Coil.csv dataset contains the results from multiple prod
 2. In your `MechaCarChallenge.RScript`, import and read in the `Suspension_Coil.csv` file as a table.
 3. Write an RScript that creates a `total_summary` dataframe using the `summarize()` function to get the mean, median, variance, and standard deviation of the suspension coil’s PSI column.
 
-Your `total_summary` dataframe should look like this:
+###### `total_summary` dataframe should look like this:
 
-![d1](https://github.com/emmanuelmartinezs/MechaCar_Statistical_Analysis/blob/main/Resources/Images/data-15-total-summary-data-mean-median-variance-sd.png)
+![image](https://user-images.githubusercontent.com/57301554/122632624-aadb3b00-d099-11eb-80bd-834274f05866.png)
 
 4. Write an RScript that creates a `lot_summary` dataframe using the `group_by()` and the `summarize()` functions to group each manufacturing lot by the mean, median, variance, and standard deviation of the suspension coil’s PSI column.
 Your lot_summary dataframe should look like this:
 
-![d1](https://github.com/emmanuelmartinezs/MechaCar_Statistical_Analysis/blob/main/Resources/Images/data-15-manufacturing-lot.png)
+![image](https://user-images.githubusercontent.com/57301554/122632629-bfb7ce80-d099-11eb-9c75-a10fd92dbfc9.png)
 
-5. Save your `MechaCarChallenge.RScript` file to your GitHub repository.
+5. Save your `MechaCarChallenge.RScript` file to your GitHub repository. 
 
-> To Deliver. 
-
-You will earn a perfect score for Deliverable 2 by completing all requirements below:
+Score for Deliverable 2 by completing all requirements below:
 
 - The Suspension_Coil.csv file is imported and read into a dataframe
 - An RScript is written to create a total summary dataframe that has the mean, median, variance, and standard deviation of the PSI for all manufacturing lots
@@ -112,11 +110,11 @@ The Suspension Coil dataset provided for the MechaCar contains the results of te
 
 First looking at all manufacturing lots:
 
-![d2](https://github.com/emmanuelmartinezs/MechaCar_Statistical_Analysis/blob/main/Resources/Images/total_lot_summary.png)
+![image](https://user-images.githubusercontent.com/57301554/122632664-f7267b00-d099-11eb-9ee8-17570a31af36.png)
 
 Diving a little deeper into each of the 3 lots:
 
-![d2](https://github.com/emmanuelmartinezs/MechaCar_Statistical_Analysis/blob/main/Resources/Images/manufactoring_lot_summary.png)
+![image](https://user-images.githubusercontent.com/57301554/122632674-073e5a80-d09a-11eb-81ea-542e90852a7d.png)
 
 With the understanding that the design specifications for the MechaCar suspension coils mandate that <mark style="background-color: Yellow">**the variance of the suspension coils cannot exceed 100 pounds per square inch (PSI)**</mark> . 
 
@@ -128,7 +126,8 @@ Similarly, but significantly more consistent, Lot 1 and Lot 2 are well within th
 
 This very simple boxplot illustrates the differences between the lots:
 
-![d2](https://github.com/emmanuelmartinezs/MechaCar_Statistical_Analysis/blob/main/Resources/Images/boxplot2.png)
+![image](https://user-images.githubusercontent.com/57301554/122632696-2dfc9100-d09a-11eb-9757-a5b52093c184.png)
+
 
 # Deliverable 3:  
 ## t-Tests on Suspension Coils
@@ -147,7 +146,8 @@ Using your knowledge of R, perform t-tests to determine if all manufacturing lot
 The next step is to conduct a t-test on the suspension coil data to determine whether there is a statistical difference between the mean of this provided sample dataset and a hypothesized, potential population dataset. Using the presumed **population mean of 1500**, we find the following:
 
 There is a summary of the t-test results across **all manufacturing lots**
-![d3](https://github.com/emmanuelmartinezs/MechaCar_Statistical_Analysis/blob/main/Resources/Images/t_test_all.png)
+
+![image](https://user-images.githubusercontent.com/57301554/122632724-4ec4e680-d09a-11eb-9ba0-1b9ac45a4a1b.png)
 
 From here we can see the **true mean of the sample is 1498.78**, which we also saw in the summary statistics above.  With a **p-Value of 0.06**, which is higher than the common significance level of 0.05, there is **NOT enough evidence to support rejecting the null hypothesis**.  That is to say, the mean of all three of these manufacturing lots is statistically similar to the presumed population mean of 1500. 
 
@@ -157,7 +157,7 @@ From here we can see the **true mean of the sample is 1498.78**, which we also s
 2. Lot 2 has essentially the same outcome with a **sample mean of 1500.02**, a **p-Value of 0.61**; the null hypothesis cannot be rejected, and the sample mean and the population mean of 1500 are statistically similar.
 3. However, Lot 3, not surprisingly is a different scenario. Here **the sample mean is 1496.14** and the **p-Value is 0.04**, which is lower than the common significance level of 0.05.  All indicating to **reject the null hypothesis** that this sample mean and the presumed population mean are not statistically different.
 
- ![d3](https://github.com/emmanuelmartinezs/MechaCar_Statistical_Analysis/blob/main/Resources/Images/t_test_lot.png)
+ ![image](https://user-images.githubusercontent.com/57301554/122632750-73b95980-d09a-11eb-96e9-e67149a33077.png)
 
 How does this information help?  Clearly, something went awry in Lot 3's production cycle. The process needs to be checked for system fails and the suspension coils from this lot need to be inspected to remove those not meeting quality criteria.
 
